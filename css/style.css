@@ -1,0 +1,115 @@
+/*
+ * Custom CSS
+ */
+
+:root {
+  --bs-body-bg: var(--bs-gray-100);
+}
+
+/* Bubble-themed custom styles */
+.bubble-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+  background: linear-gradient(135deg, #70e1f5 0%, #ffd6e0 100%);
+  animation: float 8s infinite ease-in-out alternate;
+}
+.bubble1 {
+  width: 160px;
+  height: 160px;
+  left: 20%;
+  top: 10%;
+  animation-delay: 0s;
+}
+.bubble2 {
+  width: 80px;
+  height: 80px;
+  left: 60%;
+  top: 25%;
+  animation-delay: 1s;
+}
+.bubble3 {
+  width: 120px;
+  height: 120px;
+  left: 40%;
+  top: 60%;
+  animation-delay: 2.5s;
+}
+.bubble4 {
+  width: 60px;
+  height: 60px;
+  left: 75%;
+  top: 50%;
+  animation-delay: 4s;
+}
+.bubble5 {
+  width: 200px;
+  height: 200px;
+  left: 10%;
+  top: 70%;
+  animation-delay: 5s;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(-40px) scale(1.08);
+  }
+}
+
+/* Hero section bubble styling */
+.hero-section {
+  position: relative;
+  padding: 5rem 0 6rem;
+  background: #f6fcfd;
+  text-align: center;
+  overflow: hidden;
+}
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+.bubble-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+/* General section title */
+.section-title {
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+/* Feature icons for services */
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  background: #e8f4fb;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  color: #61b6e6;
+  margin-bottom: 1rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 575.98px) {
+  .hero-section {
+    padding: 3rem 0 4rem;
+  }
+}
